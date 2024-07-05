@@ -1,10 +1,11 @@
 Pagenation
 
 Step: 1
-<script src="https://cdn.jsdelivr.net/gh/SujithVSuresh/pagenation@master/pagenation.js"></script>
+```<script src="https://cdn.jsdelivr.net/gh/SujithVSuresh/pagenation@master/pagenation.js"></script>```
 Include this at the bottom of your ejs file.
 
 Step: 2
+```
           <div class="d-flex justify-content-center">
             <nav aria-label="Page navigation example">
               <ul class="pagination">
@@ -16,13 +17,14 @@ Step: 2
               </ul>
             </nav>
           </div>
+```
           
 The above code provides the interface for pagenation. Put this at the place where you want to see the pagenation button. 
 
 Step: 3
 
 Add this code in you respective controller: 
-
+```
 const users = async (req, res) => {
   try {
     let page = req.query.page || 1;
@@ -44,6 +46,6 @@ const users = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 }; 
-
+```
 Instead of User schema you can provide any other schema, which has an array of documents.  
 Make sure to pass totalPages count to the front end. Also consider applying skip and limit.  

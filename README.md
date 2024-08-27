@@ -1,7 +1,7 @@
 Pagenation
 
 Step: 1
-```<script src="https://cdn.jsdelivr.net/gh/SujithVSuresh/pagenation@master/pagenation.js"></script>```
+```<script src="https://cdn.jsdelivr.net/gh/SujithVSuresh/pagination-cdn@master/pagination.js"></script>```
 Include this at the bottom of your ejs file.
 
 Step: 2
